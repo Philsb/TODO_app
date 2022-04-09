@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="/js/cardTodo.js"></script>
+  </head>
+
+  
+  <body>
+  
+
+    <div class="main-container grad">
+      <div class="sidebar">
+        <div class="" ><h3>TODO_io</h3></div>
+        <div class="" >
+          <hr>
+          <button href="#home"> <i class="fa fa-thumb-tack"></i>    Tasks</button>
+          <button href="#news"> <i class="fa fa-calendar"></i>    Calendar</button>
+          <button href="#contact"><i class="fa fa-trophy"></i>    Stats</button>
+          <button href="#about"><i class="fa fa-cog "></i>    Settings</button>
+        </div>
+        <div class="" style="margin-top: auto;">
+          <hr>
+          ASD
+        </div>
+      </div>
+      <div class="content" style ="padding-top: 2.5%; padding-bottom: 2.5%;" >
+        <div style="flex: 50px 0 0;">
+          <button id="addButton" type="button" class="button" style="width:50px; height:50px;">
+            <span class="button-icon">
+              <img src="/css/add_ico.svg" alt="asdd" width="20" height="20">
+            </span>
+          </button>
+        </div>
+        
+        <hr style="flex: 1px 0 0;">
+        <div id="card-container" class="card-container" >
+          <div class="" style="display: flex; flex-direction: column;">
+            <div class="row" ><p>Unassigned</p></div>
+            <div class="row card-row">
+              <div class="empty-card-slot card-slot col"></div>
+            </div>
+          </div>
+          <hr>  
+          <div class="" style="display: flex; flex-direction: column;">  
+            <div class="row"><p>Category1</p></div>
+            <div class="row card-row">
+              <div class="empty-card-slot card-slot col"></div>
+            </div>
+
+          </div>
+          <hr> 
+          <div class="" style="display: flex; flex-direction: column;">  
+            <div class="row"><p>Category2</p></div>
+            <div class="row card-row">
+              <div class="empty-card-slot card-slot col"></div>
+            </div>
+
+          </div>
+
+
+        </div>  
+      </div>
+      <div id="contextMenu" class="context-menu" style="display: none"> 
+        <ul class="menu"> 
+            <li class="share"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li> 
+            <li class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li> 
+            <li class="link"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> Copy Link Address</a></li> 
+            <li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li> 
+            <li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li> 
+            <li class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li> 
+            <li class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li> 
+        </ul> 
+      </div>
+      
+    </div>
+
+
+    <template id="main-card">
+      <div class="card card-object"  draggable ="true"  style="min-width: 150px;">
+        <div class="card-header">
+          Task
+        </div>
+  
+        <div class="card-body">
+        </div>
+      </div>
+      
+    </template>
+
+    <template id ="empty-slot">
+      <div class="empty-card-slot card-slot col"></div>
+    </template>
+
+    <template id ="slot">
+      <div class="card-slot col"></div>
+    </template>
+  
+  </body>
+  
+ 
+</html>

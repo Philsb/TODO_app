@@ -1,0 +1,203 @@
+/* Style page content */
+
+
+html,body {
+
+    background-color: black;
+    height:100%;
+    font-family: 'Source Code Pro', monospace !important;
+    color:white;
+}
+
+.main-container ::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    background: #b86bbc;
+    background-clip: padding-box;
+    border-radius: 100px;
+
+}
+.main-container ::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+
+}
+
+.main-container ::-webkit-scrollbar-track {
+    background-color: #e4e4e400;
+    border-radius: 100px;
+}
+body {
+    background-image: linear-gradient(#0b1a2f,#32365e);
+    margin: 0%;
+}
+
+button {
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+hr {
+    background: lightgrey;
+}
+
+a{
+  color: lightgrey;  
+}
+
+.main-container {
+    height: 100% !important;
+    display: flex;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sidebar{
+    padding: 10px;
+    flex: 1 1 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-right:1px solid #3e4249;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.sidebar button {
+    width: 100%;
+    font-size: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #00000000;
+    color:#5a79be;
+    border: 0px;
+}
+
+
+.content {
+    padding: 10px;
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100vw - 275px);
+}
+
+
+.primary-col {
+    color: lightgrey;  
+}
+
+.context-menu { 
+    position: absolute; 
+} 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    flex: 1 0 0;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(64 64 64 / 5%);
+    padding: 10px 0;
+    list-style-type:none;
+}
+.menu > li > a {
+    font: inherit;
+    border: 0;
+    padding: 10px 30px 10px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: unset;
+    color: #000;
+    font-weight: 500;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+}
+.menu > li > a:hover {
+    background:#f1f3f7;
+    color: #4b00ff;
+}
+.menu > li > a > i {
+    padding-right: 10px;
+}
+.menu > li.trash > a:hover {
+    color: red;
+}
+
+.card-container {
+    overflow-y: auto; 
+    flex: 1 1 100%;
+
+}
+
+.card-row {
+    overflow-x: auto;
+    min-height: 4vh;
+}
+.drop-target {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.drag-over {
+    border:1px solid #ccc!important;
+    border-radius: 16px;
+}
+
+.card-slot {
+    transition: all 0.5s;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+.empty-card-slot{
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    flex-grow: 0.0001 !important;
+}
+
+.opened-slot-grow{
+    flex-grow: 1 !important;
+}
+
+.button {
+    height: 50px !important;
+    width: 50px !important  ;
+    padding: 0;
+    background: #b86bbc;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #973aa0;
+  }
+  
+  .button:active {
+    background: #6f2a75;
+  }
+  
+  .button-text,.button-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+  }
+
+
+  
